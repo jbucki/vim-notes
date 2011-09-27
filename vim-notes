@@ -1,0 +1,54 @@
+================
+ Git (Fugitive)
+================
+- add current file to index: :Gwrite
+
+- checkout current file (revert): :Gread
+
+- remove current file from index and delete buffer: :Gremove
+
+- move file and update buffer for new location: :Gmove path/to/move/to (NOTE: "/" is project root, not file system root)
+
+============
+ Navigating
+============
+- % toggle between beginning and end of text block (HTML tag, if/else/end, etc)
+
+- m{a-z}{A-Z} (set mark. uppercase is global mark.)
+
+- `{a-z}{A-Z} (go to mark)
+
+========
+ Macros
+========
+- macros: "q" to start recording and stop recording
+
+===========
+ Searching
+===========
+- * kicks of a search for the word/text under the cursor
+
+- %s/search_text/replace_text/ec (replace all "search_text" occurances with "replace_text". "c" option is for confirmation.)
+
+================
+ Modifying Text
+================
+- surround text: cs'" <-- changes ' to "
+
+- remove surrounding text: ds'
+
+- change surrounding tag: cst<ul><ol>
+
+- change surrounding text (visual): select text, S'
+
+- commenting: select text block, <leader>c<space>
+
+=========
+ Buffers
+=========
+- resize buffer: <cmd>-direction <- increase/decrease buffer size by 5 pixels
+
+- new vertically split buffer: <leader>s
+
+- navigate between buffers: <cmd>hjkl
+
